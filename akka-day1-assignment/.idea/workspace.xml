@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b3288a0-402b-47d2-a69c-b98f385e79e0" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/project/project/target/" />
+    <ignored path="$PROJECT_DIR$/project/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="akka-day1-assignment" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="akka-day1-assignment" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TicTacToeSpec.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicTacToe.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/playstation/TicTacToe.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+              <folding>
+                <element signature="e#25#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sbt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/scala/ttt/play/TestKitUsageSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/ttt/play/MySpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/ttt/features/tic-tac-toe.feature" />
+        <option value="$PROJECT_DIR$/src/test/scala/ttt/steps/CukeRunner.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/ttt/features/tic-tac-toe-player.feature" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/ttt/playstation/TicTacToe.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="1299" />
+    <option name="height" value="741" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="akka-day1-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="akka-day1-assignment" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TicTacToe">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ttt.playstation.TicTacToe" />
+      <module name="akka-day1-assignment" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ttt.playstation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Feature: tic-tac-toe-player" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="akka-day1-assignment" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Scenario: As a Tic Tac Toe Player, I should be able to change the state of tic tac toe map after" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="akka-day1-assignment" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^As a Tic Tac Toe Player\, I should be able to change the state of tic tac toe map after$&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="akka-day1-assignment" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="TicTacToeSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="akka-day1-assignment" />
+      <setting name="path" value="TicTacToeSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Class" />
+      <setting name="path" value="TicTacToeSpec" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="OdpsJavaConfigurationType" factoryName="MaxCompute Java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <odpsJavaType />
+      <odpsEndpoint />
+      <odpsProjectName />
+      <tableName />
+      <tableColumns />
+      <tablePartition />
+      <recordLimit>100</recordLimit>
+      <method />
+    </configuration>
+    <configuration default="true" type="OdpsPythonConfigurationType" factoryName="MaxCompute Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="akka-day1-assignment-build" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="PROJECT_NAME" value="" />
+      <option name="TABLE_NAME" value="" />
+      <option name="TABLE_COLUMNS" value="" />
+      <option name="TABLE_PARTITION" value="" />
+      <option name="MAIN_CLASS" value="" />
+      <option name="RECORD_LIMIT" value="100" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="akka-day1-assignment" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SbtRunConfiguration" factoryName="SBT Task">
+      <setting name="tasks" value="" />
+      <setting name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="akka-day1-assignment" />
+      <method />
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="akka-day1-assignment" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="akka-day1-assignment" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber java.Feature: tic-tac-toe-player" />
+      <item itemvalue="Cucumber java.Scenario: As a Tic Tac Toe Player, I should be able to change the state of tic tac toe map after" />
+      <item itemvalue="Application.TicTacToe" />
+      <item itemvalue="ScalaTest.TicTacToeSpec" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Cucumber java.Feature: tic-tac-toe-player" />
+        <item itemvalue="ScalaTest.TicTacToeSpec" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="akka-day1-assignment" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="akka-day1-assignment" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="akka-day1-assignment-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3063750540000" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="2232617531" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1075804536" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b3288a0-402b-47d2-a69c-b98f385e79e0" name="Default" comment="" />
+      <created>1530593179926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530593179926</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MySpec_An_Game_actor_should_be_able_to_send_PlaceAlreadyFilled_Message_when_a_PlayStep_is_sent_on_a_non_empty_step - 2018.07.04 at 11h 01m 01s.xml">
+      <configuration name="MySpec.An Game actor should be able to send PlaceAlreadyFilled Message when a PlayStep is sent on a non empty step" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="MySpec_An_Game_actor_should_be_able_to_send_Place_Already_Filled_Message_when_a_PlayStep_is_sent_on_a_non_empty_step - 2018.07.04 at 11h 00m 04s.xml">
+      <configuration name="MySpec.An Game actor should be able to send Place Already Filled Message when a PlayStep is sent on a non empty step" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Scenario__As_a_Tic_Tac_Toe_Player,_I_should_be_able_to_change_the_state_of_tic_tac_toe_map_after - 2018.07.09 at 11h 48m 59s.xml">
+      <configuration name="Scenario: As a Tic Tac Toe Player, I should be able to change the state of tic tac toe map after" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__As_a_Tic_Tac_Toe_Player,_I_should_be_able_to_change_the_state_of_tic_tac_toe_map_after - 2018.07.09 at 12h 15m 12s.xml">
+      <configuration name="Scenario: As a Tic Tac Toe Player, I should be able to change the state of tic tac toe map after" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__As_a_Tic_Tac_Toe_Player,_I_should_be_able_to_change_the_state_of_tic_tac_toe_map_after - 2018.07.09 at 12h 16m 33s.xml">
+      <configuration name="Scenario: As a Tic Tac Toe Player, I should be able to change the state of tic tac toe map after" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__As_a_Tic_Tac_Toe_Player,_I_should_be_able_to_change_the_state_of_tic_tac_toe_map_after - 2018.07.09 at 12h 17m 39s.xml">
+      <configuration name="Scenario: As a Tic Tac Toe Player, I should be able to change the state of tic tac toe map after" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__As_a_Tic_Tac_Toe_Player,_I_should_be_able_to_change_the_state_of_tic_tac_toe_map_after - 2018.07.09 at 12h 58m 24s.xml">
+      <configuration name="Scenario: As a Tic Tac Toe Player, I should be able to change the state of tic tac toe map after" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__As_a_Tic_Tac_Toe_Player,_I_should_be_able_to_change_the_state_of_tic_tac_toe_map_after - 2018.07.09 at 13h 03m 33s.xml">
+      <configuration name="Scenario: As a Tic Tac Toe Player, I should be able to change the state of tic tac toe map after" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="TicTacToeSpec - 2018.07.04 at 12h 38m 31s.xml">
+      <configuration name="TicTacToeSpec" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TicTacToeSpec - 2018.07.04 at 12h 39m 06s.xml">
+      <configuration name="TicTacToeSpec" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="11" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3291536" />
+      <window_info anchor="right" id="sbt" order="0" weight="0.32960895" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32894737" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.49671054" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5163934" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="1" />
+      <window_info content_ui="combo" id="Project" order="10" weight="0.11173184" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="0" />
+      <window_info anchor="bottom" id="Build" order="1" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" order="8" />
+      <window_info anchor="right" id="SBT" order="5" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info id="Project Explorer" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info id="Job Explorer" order="8" />
+      <window_info anchor="right" id="Properties" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info id="DB Browser" order="9" />
+      <window_info id="Nl-Palette" order="5" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Console" order="11" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Data View" order="9" />
+      <window_info anchor="bottom" id="Message" order="2" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Console" order="11" />
+      <window_info anchor="bottom" id="DB Execution Console" order="8" />
+      <window_info id="Designer" order="1" />
+      <window_info anchor="right" id="Palette" order="11" />
+      <window_info anchor="right" id="sbt" order="0" weight="0.32960895" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="0" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.49671054" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="DB Browser" order="9" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Project Explorer" order="7" />
+      <window_info anchor="right" id="Properties" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5180921" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="SBT" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32894737" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="9" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="1" />
+      <window_info id="Job Explorer" order="8" />
+      <window_info id="Nl-Palette" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info content_ui="combo" id="Project" order="10" visible="true" weight="0.11173184" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3291536" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="78" lean-forward="true" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/steps/CukeRunner.scala" />
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/playstation/TicTacToe.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/features/tic-tac-toe-player.feature" />
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/playstation/TicTacToe.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.13-sources.jar!/akka/actor/Actor.scala" />
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/playstation/TicTacToe.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-testkit_2.12/srcs/akka-testkit_2.12-2.5.13-sources.jar!/akka/testkit/TestKit.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/playstation/TicTacToe.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sbt/boot/scala-2.10.7/org.scala-sbt/sbt/0.13.17/sbt-0.13.17.jar!/sbt/package.class" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-testkit_2.12/srcs/akka-testkit_2.12-2.5.13-sources.jar!/akka/testkit/TestActors.scala" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar!/org/scalatest/BeforeAndAfterAll.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="170" column="16" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-testkit_2.12/srcs/akka-testkit_2.12-2.5.13-sources.jar!/akka/testkit/TestKit.scala" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.13-sources.jar!/akka/actor/ActorCell.scala" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.13-sources.jar!/akka/actor/Actor.scala" />
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/steps/CukeRunner.scala" />
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/features/tic-tac-toe-player.feature" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.14-sources.jar!/akka/actor/Actor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="502" column="6" selection-start-line="502" selection-start-column="6" selection-end-line="502" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/entites/Player.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ttt/playstation/TicTacToe.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="e#25#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ttt/play/TicTacToeSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 2.7.14 (/usr/bin/python2.7) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>akka-day1-assignment</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>SBT: org.scala-lang:scala-library:2.12.6:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

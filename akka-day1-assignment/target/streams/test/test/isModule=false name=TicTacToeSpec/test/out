@@ -1,0 +1,29 @@
+[0m[[0minfo[0m] [0m[32mTicTacToeSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mAn Game actor[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be able to change and return the state of tic tac toe game[0m[0m
+[0m[[0minfo[0m] [0m[31m- should be able to send Tic Tac Toe Map and a GameOver when a condition is met *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) while expecting 4 messages (got 2)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:219)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.$anonfun$receiveN_internal$1(TestKit.scala:766)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.$anonfun$receiveN_internal$1$adapted(TestKit.scala:763)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.immutable.Range.foreach(Range.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.receiveN_internal(TestKit.scala:763)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.internalExpectMsgAllClassOf(TestKit.scala:608)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- should be able to send PlaceAlreadyFilled Message when a PlayStep is sent on a non empty step *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: not found [class ttt.entites.TicTacToeMap, class ttt.entites.PlaceAlreadyFilled] found non-matching object(s) [PlaceAlreadyFilled, PlaceAlreadyFilled][0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:219)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.checkMissingAndUnexpected(TestKit.scala:580)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.internalExpectMsgAllClassOf(TestKit.scala:611)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.expectMsgAllClassOf(TestKit.scala:595)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase.expectMsgAllClassOf$(TestKit.scala:595)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.expectMsgAllClassOf(TestKit.scala:896)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at TicTacToeSpec.$anonfun$new$4(TicTacToeSpec.scala:32)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
