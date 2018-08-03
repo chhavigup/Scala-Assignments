@@ -1,0 +1,20 @@
+[0m[[0minfo[0m] [0mscalastyle using config /home/knoldus/Desktop/akka_day2_assginment/scalastyle-config.xml[0m
+[0m[[0mdebug[0m] [0mStarting scalastyle[0m
+[0m[[0mdebug[0m] [0mstart file /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala[0m
+[0m[[0mdebug[0m] [0mend file /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala[0m
+[0m[[0mdebug[0m] [0mstart file /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala[0m
+[0m[[33mwarn[0m] [0m/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala:10:30: Magic Number[0m
+[0m[[0mdebug[0m] [0mend file /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala[0m
+[0m[[0mdebug[0m] [0mstart file /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala[0m
+[0m[[0mdebug[0m] [0mend file /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala[0m
+[0m[[0mdebug[0m] [0mstart file /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala[0m
+[0m[[33mwarn[0m] [0m/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala:31:102: Magic Number[0m
+[0m[[33mwarn[0m] [0m/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala:31:127: Magic Number[0m
+[0m[[0mdebug[0m] [0mend file /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala[0m
+[0m[[0minfo[0m] [0mscalastyle Processed 4 file(s)[0m
+[0m[[0minfo[0m] [0mscalastyle Found 0 errors[0m
+[0m[[0minfo[0m] [0mscalastyle Found 3 warnings[0m
+[0m[[0minfo[0m] [0mscalastyle Found 0 infos[0m
+[0m[[0minfo[0m] [0mscalastyle Finished in 13 ms[0m
+[0m[[32msuccess[0m] [0mcreated output: /home/knoldus/Desktop/akka_day2_assginment/target[0m
+[0m[[33mwarn[0m] [0mwarnings exist[0m

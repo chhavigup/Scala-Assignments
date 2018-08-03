@@ -1,0 +1,79 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala, /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 4 sources: invalidated sources (4) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 4 Scala sources to /home/knoldus/Desktop/akka_day2_assginment/target/scala-2.12/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.16:component from component compiler for Scala 2.12.6[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.16:component from component compiler for Scala 2.12.6[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 5b6c9c2a, interfacing (CompilerInterface) with Scala compiler version 2.12.6[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-Xplugin:/home/knoldus/.ivy2/cache/org.scoverage/scalac-scoverage-plugin_2.12/jars/scalac-scoverage-plugin_2.12-1.3.1.jar[0m
+[0m[[0mdebug[0m] [0m	-P:scoverage:dataDir:/home/knoldus/Desktop/akka_day2_assginment/target/scala-2.12/scoverage-data[0m
+[0m[[0mdebug[0m] [0m	-Yrangepos[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.6.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/knoldus/Desktop/akka_day2_assginment/target/scala-2.12/classes:/home/knoldus/.ivy2/cache/org.scoverage/scalac-scoverage-runtime_2.12/jars/scalac-scoverage-runtime_2.12-1.3.1.jar:/home/knoldus/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.5.14.jar:/home/knoldus/.ivy2/cache/com.typesafe/config/bundles/config-1.3.3.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar[0m
+[0m[[0minfo[0m] [0m[info] Cleaning datadir [/home/knoldus/Desktop/akka_day2_assginment/target/scala-2.12/scoverage-data][0m
+[0m[[0minfo[0m] [0m[info] Beginning coverage instrumentation[0m
+[0m[[0minfo[0m] [0m[info] Instrumentation completed [80 statements][0m
+[0m[[0minfo[0m] [0m[info] Wrote instrumentation file [/home/knoldus/Desktop/akka_day2_assginment/target/scala-2.12/scoverage-data/scoverage.coverage.xml][0m
+[0m[[0minfo[0m] [0m[info] Will write measurement data to [/home/knoldus/Desktop/akka_day2_assginment/target/scala-2.12/scoverage-data][0m
+[0m[[33mwarn[0m] [0mthere were four feature warnings; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mone warning found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 52.279723888 s[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, cmp, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, create, initialCapacity, notifyAll, isInstanceOf, <init>, ==, clone, MyPrioMailbox, toString, !=, getClass, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	self, context.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] The following member ref dependencies of /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m[naha] 	/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	self, context.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] The following member ref dependencies of /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m[naha] 	/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	executionContext.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] The following member ref dependencies of /home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m[naha] 	/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/MyPrioMailbox.scala[0m
+[0m[[0mdebug[0m] [0m[naha] 	/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala[0m
+[0m[[0mdebug[0m] [0m[naha] 	/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala[0m
+[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

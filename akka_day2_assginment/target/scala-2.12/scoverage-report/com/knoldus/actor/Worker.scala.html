@@ -1,0 +1,635 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com/knoldus/actor/Worker.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.knoldus.actor
+</span>2 <span style=''>
+</span>3 <span style=''>import akka.actor.Actor
+</span>4 <span style=''>import akka.event.{Logging, LoggingAdapter}
+</span>5 <span style=''>
+</span>6 <span style=''>import com.knoldus.app.Tweet
+</span>7 <span style=''>
+</span>8 <span style=''>class Worker extends Actor {
+</span>9 <span style=''>  var count = </span><span style='background: #AEF1AE'>0</span><span style=''>
+</span>10 <span style=''>  val log: LoggingAdapter = </span><span style='background: #AEF1AE'>Logging(context.system, this)</span><span style=''>
+</span>11 <span style=''>
+</span>12 <span style=''>  override def receive: PartialFunction[Any, Unit] = {
+</span>13 <span style=''>    case tweet: Tweet =&gt; if (</span><span style='background: #AEF1AE'>tweet.friendsCount &gt; 500</span><span style=''>) </span><span style='background: #AEF1AE'>{
+</span>14 <span style=''></span><span style='background: #AEF1AE'>      count += 1
+</span>15 <span style=''></span><span style='background: #AEF1AE'>      log.info(s&quot;friend count = ${tweet.friendsCount} , country = ${tweet.countryName} userName = ${tweet.tweetUserName} &quot;)
+</span>16 <span style=''></span><span style='background: #AEF1AE'>      sender() ! &quot;I receive a message with friend circle greater than 500&quot;}</span><span style=''>
+</span>17 <span style=''>      else
+</span>18 <span style=''>    {
+</span>19 <span style=''>
+</span>20 <span style=''>      </span><span style='background: #AEF1AE'>sender() ! &quot;I receive a message with friend circle less than 500&quot;</span><span style=''>
+</span>21 <span style=''>    }
+</span>22 <span style=''>  }
+</span>23 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          9
+        </td>
+        <td>
+          19
+        </td>
+        <td>
+          169
+          -
+          170
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          207
+          -
+          221
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.ActorContext.system
+        </td>
+        <td style="background: #AEF1AE">
+          Worker.this.context.system
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          22
+        </td>
+        <td>
+          199
+          -
+          228
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.event.Logging.apply
+        </td>
+        <td style="background: #AEF1AE">
+          akka.event.Logging.apply[com.knoldus.actor.Worker](Worker.this.context.system, this)(event.this.LogSource.fromActor)
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          206
+          -
+          206
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.event.LogSource.fromActor
+        </td>
+        <td style="background: #AEF1AE">
+          event.this.LogSource.fromActor
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          283
+          -
+          283
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.knoldus.actor.Worker.$anonfun.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new $anonfun()
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          314
+          -
+          338
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Long.&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          tweet.friendsCount.&gt;(500)
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          39
+        </td>
+        <td>
+          340
+          -
+          558
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          {
+  Worker.this.count_=(Worker.this.count.+(1));
+  Worker.this.log.info(scala.StringContext.apply(&quot;friend count = &quot;, &quot; , country = &quot;, &quot; userName = &quot;, &quot; &quot;).s(tweet.friendsCount, tweet.countryName, tweet.tweetUserName));
+  actor.this.`package`.actorRef2Scala(Worker.this.sender()).!(&quot;I receive a message with friend circle greater than 500&quot;)(Worker.this.self)
+}
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          348
+          -
+          358
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.knoldus.actor.Worker.count_=
+        </td>
+        <td style="background: #AEF1AE">
+          Worker.this.count_=(Worker.this.count.+(1))
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          348
+          -
+          358
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #AEF1AE">
+          Worker.this.count.+(1)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          32
+        </td>
+        <td>
+          459
+          -
+          478
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.knoldus.app.Tweet.tweetUserName
+        </td>
+        <td style="background: #AEF1AE">
+          tweet.tweetUserName
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          376
+          -
+          392
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;friend count = &quot;
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          479
+          -
+          481
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot; &quot;
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          31
+        </td>
+        <td>
+          427
+          -
+          444
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.knoldus.app.Tweet.countryName
+        </td>
+        <td style="background: #AEF1AE">
+          tweet.countryName
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          34
+        </td>
+        <td>
+          365
+          -
+          482
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.event.LoggingAdapter.info
+        </td>
+        <td style="background: #AEF1AE">
+          Worker.this.log.info(scala.StringContext.apply(&quot;friend count = &quot;, &quot; , country = &quot;, &quot; userName = &quot;, &quot; &quot;).s(tweet.friendsCount, tweet.countryName, tweet.tweetUserName))
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          445
+          -
+          458
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot; userName = &quot;
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          412
+          -
+          426
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot; , country = &quot;
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          393
+          -
+          411
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.knoldus.app.Tweet.friendsCount
+        </td>
+        <td style="background: #AEF1AE">
+          tweet.friendsCount
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          33
+        </td>
+        <td>
+          374
+          -
+          481
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #AEF1AE">
+          scala.StringContext.apply(&quot;friend count = &quot;, &quot; , country = &quot;, &quot; userName = &quot;, &quot; &quot;).s(tweet.friendsCount, tweet.countryName, tweet.tweetUserName)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          35
+        </td>
+        <td>
+          489
+          -
+          497
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.Actor.sender
+        </td>
+        <td style="background: #AEF1AE">
+          Worker.this.sender()
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          489
+          -
+          557
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.ScalaActorRef.!
+        </td>
+        <td style="background: #AEF1AE">
+          actor.this.`package`.actorRef2Scala(Worker.this.sender()).!(&quot;I receive a message with friend circle greater than 500&quot;)(Worker.this.self)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          498
+          -
+          498
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.Actor.self
+        </td>
+        <td style="background: #AEF1AE">
+          Worker.this.self
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          500
+          -
+          557
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;I receive a message with friend circle greater than 500&quot;
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          594
+          -
+          648
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;I receive a message with friend circle less than 500&quot;
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          583
+          -
+          648
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          akka.actor.ScalaActorRef.!
+        </td>
+        <td style="background: #AEF1AE">
+          actor.this.`package`.actorRef2Scala(Worker.this.sender()).!(&quot;I receive a message with friend circle less than 500&quot;)(Worker.this.self)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          583
+          -
+          591
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.Actor.sender
+        </td>
+        <td style="background: #AEF1AE">
+          Worker.this.sender()
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          43
+        </td>
+        <td>
+          583
+          -
+          648
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.ScalaActorRef.!
+        </td>
+        <td style="background: #AEF1AE">
+          actor.this.`package`.actorRef2Scala(Worker.this.sender()).!(&quot;I receive a message with friend circle less than 500&quot;)(Worker.this.self)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          592
+          -
+          592
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.Actor.self
+        </td>
+        <td style="background: #AEF1AE">
+          Worker.this.self
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

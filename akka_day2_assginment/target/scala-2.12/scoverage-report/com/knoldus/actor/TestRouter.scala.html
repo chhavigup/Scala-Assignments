@@ -1,0 +1,450 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com/knoldus/actor/TestRouter.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.knoldus.actor
+</span>2 <span style=''>
+</span>3 <span style=''>import akka.actor.{Actor, Props, Terminated}
+</span>4 <span style=''>import akka.routing
+</span>5 <span style=''>import akka.routing.{ActorRefRoutee, RoundRobinRoutingLogic, Router}
+</span>6 <span style=''>import com.knoldus.app.Tweet
+</span>7 <span style=''>
+</span>8 <span style=''>class TestRouter extends Actor {
+</span>9 <span style=''>  var router: routing.Router = {
+</span>10 <span style=''>    val routees = </span><span style='background: #AEF1AE'>Vector.fill(5) {
+</span>11 <span style=''></span><span style='background: #AEF1AE'>      val r = context.actorOf(Props[Worker].withDispatcher(&quot;prio-dispatcher&quot;))
+</span>12 <span style=''></span><span style='background: #AEF1AE'>      context watch r
+</span>13 <span style=''></span><span style='background: #AEF1AE'>      ActorRefRoutee(r)
+</span>14 <span style=''></span><span style='background: #AEF1AE'>    }</span><span style=''>
+</span>15 <span style=''>    </span><span style='background: #AEF1AE'>Router(RoundRobinRoutingLogic(), routees)</span><span style=''>
+</span>16 <span style=''>  }
+</span>17 <span style=''> override def receive: PartialFunction[Any, Unit] = {
+</span>18 <span style=''>
+</span>19 <span style=''>   case buffer: Tweet =&gt; </span><span style='background: #AEF1AE'>router.route(buffer , sender())</span><span style=''>
+</span>20 <span style=''>   case Terminated(a) =&gt;
+</span>21 <span style=''>     </span><span style='background: #F0ADAD'>router = router.removeRoutee(a)</span><span style=''>
+</span>22 <span style=''>     val r = </span><span style='background: #F0ADAD'>context.actorOf(Props[Worker])</span><span style=''>
+</span>23 <span style=''>     </span><span style='background: #F0ADAD'>context watch r</span><span style=''>
+</span>24 <span style=''>     </span><span style='background: #F0ADAD'>router = router.addRoutee(r)</span><span style=''>
+</span>25 <span style=''>
+</span>26 <span style=''>  }
+</span>27 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          287
+          -
+          288
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          5
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          275
+          -
+          422
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.generic.GenTraversableFactory.fill
+        </td>
+        <td style="background: #AEF1AE">
+          scala.`package`.Vector.fill[akka.routing.ActorRefRoutee](5)({
+  val r: akka.actor.ActorRef = TestRouter.this.context.actorOf(akka.actor.Props.apply[com.knoldus.actor.Worker]()((ClassTag.apply[com.knoldus.actor.Worker](classOf[com.knoldus.actor.Worker]): scala.reflect.ClassTag[com.knoldus.actor.Worker])).withDispatcher(&quot;prio-dispatcher&quot;));
+  TestRouter.this.context.watch(r);
+  akka.routing.ActorRefRoutee.apply(r)
+})
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          322
+          -
+          369
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.Props.withDispatcher
+        </td>
+        <td style="background: #AEF1AE">
+          akka.actor.Props.apply[com.knoldus.actor.Worker]()((ClassTag.apply[com.knoldus.actor.Worker](classOf[com.knoldus.actor.Worker]): scala.reflect.ClassTag[com.knoldus.actor.Worker])).withDispatcher(&quot;prio-dispatcher&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          306
+          -
+          370
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorRefFactory.actorOf
+        </td>
+        <td style="background: #AEF1AE">
+          TestRouter.this.context.actorOf(akka.actor.Props.apply[com.knoldus.actor.Worker]()((ClassTag.apply[com.knoldus.actor.Worker](classOf[com.knoldus.actor.Worker]): scala.reflect.ClassTag[com.knoldus.actor.Worker])).withDispatcher(&quot;prio-dispatcher&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          377
+          -
+          392
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorContext.watch
+        </td>
+        <td style="background: #AEF1AE">
+          TestRouter.this.context.watch(r)
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          399
+          -
+          416
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.routing.ActorRefRoutee.apply
+        </td>
+        <td style="background: #AEF1AE">
+          akka.routing.ActorRefRoutee.apply(r)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          427
+          -
+          468
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.routing.Router.apply
+        </td>
+        <td style="background: #AEF1AE">
+          akka.routing.Router.apply(akka.routing.RoundRobinRoutingLogic.apply(), routees)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          434
+          -
+          458
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.routing.RoundRobinRoutingLogic.apply
+        </td>
+        <td style="background: #AEF1AE">
+          akka.routing.RoundRobinRoutingLogic.apply()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          525
+          -
+          525
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.knoldus.actor.TestRouter.$anonfun.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new $anonfun()
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          553
+          -
+          584
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.routing.Router.route
+        </td>
+        <td style="background: #AEF1AE">
+          TestRouter.this.router.route(buffer, TestRouter.this.sender())
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          575
+          -
+          583
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.Actor.sender
+        </td>
+        <td style="background: #AEF1AE">
+          TestRouter.this.sender()
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          624
+          -
+          646
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.routing.Router.removeRoutee
+        </td>
+        <td style="background: #F0ADAD">
+          TestRouter.this.router.removeRoutee(a)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          615
+          -
+          646
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.knoldus.actor.TestRouter.router_=
+        </td>
+        <td style="background: #F0ADAD">
+          TestRouter.this.router_=(TestRouter.this.router.removeRoutee(a))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          660
+          -
+          690
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorRefFactory.actorOf
+        </td>
+        <td style="background: #F0ADAD">
+          TestRouter.this.context.actorOf(akka.actor.Props.apply[com.knoldus.actor.Worker]()((ClassTag.apply[com.knoldus.actor.Worker](classOf[com.knoldus.actor.Worker]): scala.reflect.ClassTag[com.knoldus.actor.Worker])))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          676
+          -
+          689
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.Props.apply
+        </td>
+        <td style="background: #F0ADAD">
+          akka.actor.Props.apply[com.knoldus.actor.Worker]()((ClassTag.apply[com.knoldus.actor.Worker](classOf[com.knoldus.actor.Worker]): scala.reflect.ClassTag[com.knoldus.actor.Worker]))
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          15
+        </td>
+        <td>
+          696
+          -
+          711
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorContext.watch
+        </td>
+        <td style="background: #F0ADAD">
+          TestRouter.this.context.watch(r)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          717
+          -
+          745
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.knoldus.actor.TestRouter.router_=
+        </td>
+        <td style="background: #F0ADAD">
+          TestRouter.this.router_=(TestRouter.this.router.addRoutee(r))
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          16
+        </td>
+        <td>
+          726
+          -
+          745
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.routing.Router.addRoutee
+        </td>
+        <td style="background: #F0ADAD">
+          TestRouter.this.router.addRoutee(r)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

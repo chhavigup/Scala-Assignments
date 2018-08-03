@@ -1,0 +1,293 @@
+<scoverage 
+statement-count="80" statements-invoked="38" statement-rate="47.50" branch-rate="100.00" version="1.0" timestamp="1533293046732">
+    <packages>
+        <package name="com.knoldus.actor" statement-count="45" statements-invoked="38" statement-rate="84.44">
+            <classes>
+                <class 
+                name="com.knoldus.actor.TestRouter" filename="com/knoldus/actor/TestRouter.scala" statement-count="18" statements-invoked="11" statement-rate="61.11" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.knoldus.actor/TestRouter/receive" statement-count="10" statements-invoked="3" statement-rate="30.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="717" end="745" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="624" end="646" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="660" end="690" line="22" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="676" end="689" line="22" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="726" end="745" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="553" end="584" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="575" end="583" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="525" end="525" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="615" end="646" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="receive" start="696" end="711" line="23" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.knoldus.actor/TestRouter/&lt;none&gt;" statement-count="8" statements-invoked="8" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="&lt;none&gt;" start="427" end="468" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="&lt;none&gt;" start="322" end="369" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="&lt;none&gt;" start="399" end="416" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="&lt;none&gt;" start="377" end="392" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="&lt;none&gt;" start="434" end="458" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="&lt;none&gt;" start="287" end="288" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="&lt;none&gt;" start="306" end="370" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="TestRouter" class-type="Class" full-class-name="com.knoldus.actor.TestRouter" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala" method="&lt;none&gt;" start="275" end="422" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.knoldus.actor.Worker" filename="com/knoldus/actor/Worker.scala" statement-count="27" statements-invoked="27" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.knoldus.actor/Worker/receive" statement-count="23" statements-invoked="23" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="314" end="338" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="459" end="478" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="594" end="648" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="489" end="497" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="583" end="648" line="20" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="376" end="392" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="489" end="557" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="479" end="481" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="583" end="591" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="427" end="444" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="583" end="648" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="348" end="358" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="365" end="482" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="498" end="498" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="445" end="458" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="283" end="283" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="500" end="557" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="412" end="426" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="393" end="411" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="340" end="558" line="13" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="592" end="592" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="374" end="481" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="receive" start="348" end="358" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.knoldus.actor/Worker/&lt;none&gt;" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="&lt;none&gt;" start="207" end="221" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="&lt;none&gt;" start="199" end="228" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="&lt;none&gt;" start="169" end="170" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.actor" class="Worker" class-type="Class" full-class-name="com.knoldus.actor.Worker" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/Worker.scala" method="&lt;none&gt;" start="206" end="206" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.knoldus.app" statement-count="35" statements-invoked="0" statement-rate="0.00">
+            <classes>
+                <class 
+                name="com.knoldus.app.TwitterStreamApp" filename="com/knoldus/app/TwitterStreamApp.scala" statement-count="35" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="com.knoldus.app/TwitterStreamApp/&lt;none&gt;" statement-count="35" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1223" end="1238" line="35" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="947" end="1164" line="29" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1100" end="1113" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="847" end="864" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1154" end="1158" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="973" end="981" line="29" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1168" end="1261" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1204" end="1208" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1223" end="1229" line="35" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1009" end="1026" line="30" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="673" end="724" line="23" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1031" end="1160" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="612" end="641" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1223" end="1229" line="35" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1041" end="1160" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="983" end="992" line="29" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="994" end="994" line="29" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1085" end="1098" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="658" end="735" line="23" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1230" end="1230" line="35" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1217" end="1217" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1194" end="1202" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="973" end="974" line="29" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1134" end="1141" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1115" end="1132" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1194" end="1195" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1243" end="1257" line="36" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1143" end="1159" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="983" end="985" line="29" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1204" end="1215" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="726" end="734" line="23" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1047" end="1083" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1232" end="1238" line="35" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="1038" end="1038" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.knoldus.app" class="TwitterStreamApp" class-type="Object" full-class-name="com.knoldus.app.TwitterStreamApp" source="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala" method="&lt;none&gt;" start="899" end="943" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+ <file name="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/app/TwitterStreamApp.scala">
+  <error column="102" line="31" source="org.scalastyle.scalariform.MagicNumberChecker" severity="warning" message="Magic Number"/>
+  <error column="127" line="31" source="org.scalastyle.scalariform.MagicNumberChecker" severity="warning" message="Magic Number"/>
+ </file>
+ <file name="/home/knoldus/Desktop/akka_day2_assginment/src/main/scala/com/knoldus/actor/TestRouter.scala">
+  <error column="30" line="10" source="org.scalastyle.scalariform.MagicNumberChecker" severity="warning" message="Magic Number"/>
+ </file>
+</checkstyle>

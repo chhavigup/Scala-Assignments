@@ -1,0 +1,828 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com/knoldus/app/TwitterStreamApp.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.knoldus.app
+</span>2 <span style=''>
+</span>3 <span style=''>
+</span>4 <span style=''>import akka.actor.{ActorSystem, Props}
+</span>5 <span style=''>import akka.routing.Router
+</span>6 <span style=''>import com.knoldus.actor.TestRouter
+</span>7 <span style=''>import com.typesafe.config.ConfigFactory
+</span>8 <span style=''>
+</span>9 <span style=''>import scala.collection.mutable.ListBuffer
+</span>10 <span style=''>import scala.concurrent.ExecutionContextExecutor
+</span>11 <span style=''>import scala.concurrent.duration._
+</span>12 <span style=''>
+</span>13 <span style=''>
+</span>14 <span style=''>case class Tweet(tweetId: String, createdAt: Long, userId: Long, tweetUserName: String, countryName: String, friendsCount: Long)
+</span>15 <span style=''>
+</span>16 <span style=''>object TwitterStreamApp extends App {
+</span>17 <span style=''> //val sys = ActorSystem(&quot; TwitterStreamApp&quot;, ConfigFactory.load(&quot;application.conf&quot;)
+</span>18 <span style=''>   // .withFallback(ConfigFactory.load()))
+</span>19 <span style=''>
+</span>20 <span style=''>
+</span>21 <span style=''>  val system = </span><span style='background: #F0ADAD'>ActorSystem(&quot;tweetAppSystem&quot;)</span><span style=''>
+</span>22 <span style=''>
+</span>23 <span style=''>  val master = </span><span style='background: #F0ADAD'>system.actorOf(Props[TestRouter].withDispatcher(&quot;prio-dispatcher&quot;), &quot;router&quot;)</span><span style=''>
+</span>24 <span style=''>
+</span>25 <span style=''>  // excution context should be use for scheduler
+</span>26 <span style=''>  implicit val executionContext: ExecutionContextExecutor = </span><span style='background: #F0ADAD'>system.dispatcher</span><span style=''>
+</span>27 <span style=''>  val buffer: ListBuffer[Tweet] = </span><span style='background: #F0ADAD'>scala.collection.mutable.ListBuffer[Tweet]()</span><span style=''>
+</span>28 <span style=''>
+</span>29 <span style=''>  </span><span style='background: #F0ADAD'>system.scheduler.schedule(0 millis, 50 millis) {
+</span>30 <span style=''></span><span style='background: #F0ADAD'>    val rg = scala.util.Random
+</span>31 <span style=''></span><span style='background: #F0ADAD'>    buffer += Tweet(java.util.UUID.randomUUID().toString, rg.nextLong(), rg.nextLong(), rg.nextString(10), &quot;India&quot;, rg.nextInt(2000))
+</span>32 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
+</span>33 <span style=''>
+</span>34 <span style=''>  </span><span style='background: #F0ADAD'>system.scheduler.schedule(0 millis, 1000 millis) {
+</span>35 <span style=''></span><span style='background: #F0ADAD'>    master ! buffer
+</span>36 <span style=''></span><span style='background: #F0ADAD'>    buffer.clear()
+</span>37 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
+</span>38 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          46
+        </td>
+        <td>
+          612
+          -
+          641
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorSystem.apply
+        </td>
+        <td style="background: #F0ADAD">
+          akka.actor.ActorSystem.apply(&quot;tweetAppSystem&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          673
+          -
+          724
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.Props.withDispatcher
+        </td>
+        <td style="background: #F0ADAD">
+          akka.actor.Props.apply[com.knoldus.actor.TestRouter]()((ClassTag.apply[com.knoldus.actor.TestRouter](classOf[com.knoldus.actor.TestRouter]): scala.reflect.ClassTag[com.knoldus.actor.TestRouter])).withDispatcher(&quot;prio-dispatcher&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          658
+          -
+          735
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorRefFactory.actorOf
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.system.actorOf(akka.actor.Props.apply[com.knoldus.actor.TestRouter]()((ClassTag.apply[com.knoldus.actor.TestRouter](classOf[com.knoldus.actor.TestRouter]): scala.reflect.ClassTag[com.knoldus.actor.TestRouter])).withDispatcher(&quot;prio-dispatcher&quot;), &quot;router&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          726
+          -
+          734
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;router&quot;
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          847
+          -
+          864
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.ActorSystem.dispatcher
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.system.dispatcher
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          899
+          -
+          943
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.generic.GenericCompanion.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.mutable.ListBuffer.apply[com.knoldus.app.Tweet]()
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          68
+        </td>
+        <td>
+          947
+          -
+          1164
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.Scheduler.schedule
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.system.scheduler.schedule(scala.concurrent.duration.`package`.DurationInt(0).millis, scala.concurrent.duration.`package`.DurationInt(50).millis)({
+  val rg: util.Random.type = scala.util.Random;
+  {
+    TwitterStreamApp.this.buffer.+=(Tweet.apply(java.util.UUID.randomUUID().toString(), rg.nextLong(), rg.nextLong(), rg.nextString(10), &quot;India&quot;, rg.nextInt(2000).toLong));
+    ()
+  }
+})(TwitterStreamApp.this.executionContext)
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          53
+        </td>
+        <td>
+          973
+          -
+          981
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.concurrent.duration.DurationConversions.millis
+        </td>
+        <td style="background: #F0ADAD">
+          scala.concurrent.duration.`package`.DurationInt(0).millis
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          55
+        </td>
+        <td>
+          983
+          -
+          992
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.concurrent.duration.DurationConversions.millis
+        </td>
+        <td style="background: #F0ADAD">
+          scala.concurrent.duration.`package`.DurationInt(50).millis
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          67
+        </td>
+        <td>
+          994
+          -
+          994
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.knoldus.app.TwitterStreamApp.executionContext
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.executionContext
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          52
+        </td>
+        <td>
+          973
+          -
+          974
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          54
+        </td>
+        <td>
+          983
+          -
+          985
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          50
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          56
+        </td>
+        <td>
+          1009
+          -
+          1026
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.util.Random
+        </td>
+        <td style="background: #F0ADAD">
+          scala.util.Random
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          59
+        </td>
+        <td>
+          1100
+          -
+          1113
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Random.nextLong
+        </td>
+        <td style="background: #F0ADAD">
+          rg.nextLong()
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          62
+        </td>
+        <td>
+          1154
+          -
+          1158
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          2000
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          65
+        </td>
+        <td>
+          1031
+          -
+          1160
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.+=
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.buffer.+=(Tweet.apply(java.util.UUID.randomUUID().toString(), rg.nextLong(), rg.nextLong(), rg.nextString(10), &quot;India&quot;, rg.nextInt(2000).toLong))
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          64
+        </td>
+        <td>
+          1041
+          -
+          1160
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.knoldus.app.Tweet.apply
+        </td>
+        <td style="background: #F0ADAD">
+          Tweet.apply(java.util.UUID.randomUUID().toString(), rg.nextLong(), rg.nextLong(), rg.nextString(10), &quot;India&quot;, rg.nextInt(2000).toLong)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          58
+        </td>
+        <td>
+          1085
+          -
+          1098
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Random.nextLong
+        </td>
+        <td style="background: #F0ADAD">
+          rg.nextLong()
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          61
+        </td>
+        <td>
+          1134
+          -
+          1141
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;India&quot;
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          60
+        </td>
+        <td>
+          1115
+          -
+          1132
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Random.nextString
+        </td>
+        <td style="background: #F0ADAD">
+          rg.nextString(10)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          63
+        </td>
+        <td>
+          1143
+          -
+          1159
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.Int.toLong
+        </td>
+        <td style="background: #F0ADAD">
+          rg.nextInt(2000).toLong
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          57
+        </td>
+        <td>
+          1047
+          -
+          1083
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.UUID.toString
+        </td>
+        <td style="background: #F0ADAD">
+          java.util.UUID.randomUUID().toString()
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          66
+        </td>
+        <td>
+          1038
+          -
+          1038
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          80
+        </td>
+        <td>
+          1168
+          -
+          1261
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.Scheduler.schedule
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.system.scheduler.schedule(scala.concurrent.duration.`package`.DurationInt(0).millis, scala.concurrent.duration.`package`.DurationInt(1000).millis)({
+  {
+    &lt;artifact&gt; val qual$1: akka.actor.ScalaActorRef = actor.this.`package`.actorRef2Scala(TwitterStreamApp.this.master);
+    &lt;artifact&gt; val x$1: scala.collection.mutable.ListBuffer[com.knoldus.app.Tweet] = TwitterStreamApp.this.buffer;
+    &lt;artifact&gt; val x$2: akka.actor.ActorRef = qual$1.!$default$2(x$1);
+    qual$1.!(x$1)(x$2)
+  };
+  TwitterStreamApp.this.buffer.clear()
+})(TwitterStreamApp.this.executionContext)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          71
+        </td>
+        <td>
+          1204
+          -
+          1208
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          1000
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          79
+        </td>
+        <td>
+          1217
+          -
+          1217
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.knoldus.app.TwitterStreamApp.executionContext
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.executionContext
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          70
+        </td>
+        <td>
+          1194
+          -
+          1202
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.concurrent.duration.DurationConversions.millis
+        </td>
+        <td style="background: #F0ADAD">
+          scala.concurrent.duration.`package`.DurationInt(0).millis
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          69
+        </td>
+        <td>
+          1194
+          -
+          1195
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          72
+        </td>
+        <td>
+          1204
+          -
+          1215
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.concurrent.duration.DurationConversions.millis
+        </td>
+        <td style="background: #F0ADAD">
+          scala.concurrent.duration.`package`.DurationInt(1000).millis
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          77
+        </td>
+        <td>
+          1223
+          -
+          1238
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.ScalaActorRef.!
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.!(x$1)(x$2)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          74
+        </td>
+        <td>
+          1223
+          -
+          1229
+        </td>
+        <td>
+          ApplyImplicitView
+        </td>
+        <td>
+          akka.actor.actorRef2Scala
+        </td>
+        <td style="background: #F0ADAD">
+          actor.this.`package`.actorRef2Scala(TwitterStreamApp.this.master)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          73
+        </td>
+        <td>
+          1223
+          -
+          1229
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.knoldus.app.TwitterStreamApp.master
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.master
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          76
+        </td>
+        <td>
+          1230
+          -
+          1230
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ScalaActorRef.!$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.!$default$2(x$1)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          75
+        </td>
+        <td>
+          1232
+          -
+          1238
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.knoldus.app.TwitterStreamApp.buffer
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.buffer
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          78
+        </td>
+        <td>
+          1243
+          -
+          1257
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.clear
+        </td>
+        <td style="background: #F0ADAD">
+          TwitterStreamApp.this.buffer.clear()
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

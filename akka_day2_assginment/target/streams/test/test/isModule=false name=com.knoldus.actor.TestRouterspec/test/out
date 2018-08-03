@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mTestRouterspec:[0m[0m
+[0m[[0minfo[0m] [0m[32mUnit Testing [0m[0m
+[0m[[0minfo[0m] [0m[32m- should for Worker actor tweet received with friend group greater than 500[0m[0m
+[0m[[0minfo[0m] [0m[32m- should for Worker actor tweet received with friend group less than 500[0m[0m
+[0m[[0minfo[0m] [0m[32m- should checks the Termination of any routee[0m[0m
